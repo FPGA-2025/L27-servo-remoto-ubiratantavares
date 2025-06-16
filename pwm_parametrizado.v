@@ -3,7 +3,7 @@ module PWM_Parametrizado # (
 ) (
 	input wire clk,
 	input wire rst_n,
-	input wire [WIDTH-1:0] duty_cycle // duty_cycle = period * duty_porcent, 0 <= duty_porcent <= 1
+	input wire [WIDTH-1:0] duty_cycle, // duty_cycle = period * duty_porcent, 0 <= duty_porcent <= 1
 	input wire [WIDTH-1:0] period, // period = clk_freq / pwm_freq
 	output reg pwm_out
 );
