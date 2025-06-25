@@ -3,7 +3,7 @@ module PWM (
     input wire rst_n,
     input wire [31:0] duty_cycle, // duty cycle final = duty_cycle / period
     input wire [31:0] period,     // pwm_freq = clk_freq / period
-    output reg pwm_out
+    output wire pwm_out
 );
 
     // Instancia o módulo PWM parametrizado com WIDTH = 32
